@@ -6,6 +6,4 @@ RSpec.describe Article, type: :model do
     p a1
     expect(a1.title).to eq("test title")
   end
-  it "id will be unique" do
-  end
 end
