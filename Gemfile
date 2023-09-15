@@ -52,3 +52,5 @@ gem "rspec-rails", "~> 6.0", group: :test
 
 
 gem "standard", "~> 1.30"
+
+gem "jsonapi-serializer", "~> 2.2"
