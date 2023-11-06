@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   def index
-    render json: Article.all, status: :ok
+    articles = Article.all
+    render json: serializer.new(articles), status: :ok
   end
 
   def create
@@ -14,4 +15,11 @@ class ArticlesController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def serializer
+    ArticleSerializer
+  end
+
 end
